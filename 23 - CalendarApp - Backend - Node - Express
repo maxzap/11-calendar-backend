@@ -1,0 +1,50 @@
+¿Qué veremos en esta sección?
+
+Node
+
+Express
+
+Mongoose
+
+Modelos
+
+Controllers
+
+Middlewares de Express
+
+JWT
+
+Autenticación pasiva
+
+Payloas
+
+Encriptación
+
+Rutas
+
+CORS
+
+Revalidar tokens
+
+MongoDB
+
+MongoAtlas
+
+MongoCompass
+
+Es una sección bastante pesada en el aspecto de que no es React lo que veremos, pero todo lo haremos con JavaScript, y ya debemos de estar familiarizados con él.
+
+El backend que haremos aquí es robusto y lo podrían utilizar en proyectos reales, espero que lo aprovechen y sobre todo aprendan bastante.
+
+Si quieren saber más sobre Node, recuerden que tengo un curso especializado en ese tema.
+
+1 - Inicio del proyecto CalendarioApp Node Backend
+		crea el package.json con toda la configuración por defectgo.
+			--> npm init -Y
+
+		para ejecutar un programa en node se declara el archivo de entrada junto con el comando
+			--> node index.js
+		para evitar que tener que hacer esta tarea repetitva vamosa instalar un paquete que realiza esta tarea de manera automatica cada que vez que detecta un cambio en algun archivo.
+			-->sudo npm i nodemon -g
+		Una vez instalado nodemon podremos configurar un comando para lanzarlo directamente desde consola.
+			--> npm run dev
