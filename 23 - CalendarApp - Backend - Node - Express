@@ -57,7 +57,8 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 		La carpeta publica en el cual se subira un sitio web que eventualmente sera la app de react.
 
 		Crear variables de entorno.
+		Paquete para manejar variables de entorno.
+			->> npm i dotenv
 
 		app.use() <-- Es conocido como un middleware, un middleware no es mas que una funcion que se ejecuta como respuesta a una petición.
 
-		
