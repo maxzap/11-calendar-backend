@@ -64,3 +64,6 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 4 - Creando las rutas relacionadas a usuarios.
 		Creamos el directorio routes y el archivo auth que va a contener las rutas de login, registro y renew del token.
+
+5 - Endpoints de renovar, crear y login.
+		Retiramos la logica de las rutas y las colocamos en funciones dentro del directorio controller.
