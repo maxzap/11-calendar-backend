@@ -48,3 +48,16 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 			-->sudo npm i nodemon -g
 		Una vez instalado nodemon podremos configurar un comando para lanzarlo directamente desde consola.
 			--> npm run dev
+
+2 - Configurando Express
+		necesitamos express para crear un servidor que tenga todos los endpoints y que me ayude para crear mi server.
+		--> npm i express
+
+3 - Variables de entorno y carpeta publica.
+		La carpeta publica en el cual se subira un sitio web que eventualmente sera la app de react.
+
+		Crear variables de entorno.
+
+		app.use() <-- Es conocido como un middleware, un middleware no es mas que una funcion que se ejecuta como respuesta a una petición.
+
+		

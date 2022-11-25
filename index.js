@@ -6,11 +6,15 @@ const app = express();
 // Rutas
 
 
-app.get('/', (req, res) => {
-    res.json({
-        ok: true
-    })
-});
+// Directorio publico
+
+app.use( express.static('public') );
+
+// app.get('/', (req, res) => {
+//     res.json({
+//         ok: true
+//     })
+// });
 
 // Escuchar peticiones
 app.listen( 4000, () => {
