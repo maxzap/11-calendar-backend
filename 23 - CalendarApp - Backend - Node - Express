@@ -62,3 +62,5 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 		app.use() <-- Es conocido como un middleware, un middleware no es mas que una funcion que se ejecuta como respuesta a una petición.
 
+4 - Creando las rutas relacionadas a usuarios.
+		Creamos el directorio routes y el archivo auth que va a contener las rutas de login, registro y renew del token.
