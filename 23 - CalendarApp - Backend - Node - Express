@@ -71,3 +71,12 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 6 - Recuperar información de un posteo.
 		http status code response:
 		--> https://www.restapitutorial.com/httpstatuscodes.html
+
+7 - Express Validator.
+		Hay millones de paquetes que resuelven necesidades.
+		Ya existen paquetes para hacer validaciones en express.
+
+		Uno es el express validator que dispone varios middleware (Recordar que un middleware es simplemente una funcion que se va a ejecutar antes de una cosa).
+		--> npm i express-validator
+
+		Usame check del paquete de express validator para validar los campos enviados en el request.
