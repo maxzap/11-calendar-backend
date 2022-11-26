@@ -67,3 +67,7 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 5 - Endpoints de renovar, crear y login.
 		Retiramos la logica de las rutas y las colocamos en funciones dentro del directorio controller.
+
+6 - Recuperar información de un posteo.
+		http status code response:
+		--> https://www.restapitutorial.com/httpstatuscodes.html
