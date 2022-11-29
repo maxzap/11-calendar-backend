@@ -83,4 +83,22 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 8 - Custom middleware.
 		No es mas que un funcion que quiero colocar dentro de un CHECK o validación de Express.
+
+9 - Configuración de BD.
+		Mongo Atlas es el servicio de MONGODB en la nube.
+		Te permite tener una bd lista y funcional en la nube en segundos.
+			--> https://www.mongodb.com/cloud/atlas/efficiency?utm_source=google&utm_campaign=gs_americas_canada_search_brand_atlas_desktop&utm_term=mongo%20atlas&utm_medium=cpc_paid_search&utm_ad=e&gclid=Cj0KCQjwiYL3BRDVARIsAF9E4GfQWQYG_pbTlJA5eixJKM75IaFYqk4nUBlKe0iXkKn4kXc1HZmKSikaAtKzEALw_wcB
+
+		Mongoose te facilita la vida cuando tenes que trabajar con MongoDB
+		Es un ODM (Object Data Manager).
+			--> https://mongoosejs.com/
+			--> npm i mongoose
+
+
+		db user = dbadmin
+		password = r176tspc4XAGtR6g
+
+
+10 - Conectar Node a Mongo Atlas.
+		Las variables de entornos sensibles podrian crearse en heroku como variables de entornos, para los casos en donde despleguemos en backends de terceros.
 		
