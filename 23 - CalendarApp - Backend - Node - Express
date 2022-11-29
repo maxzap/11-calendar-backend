@@ -80,3 +80,7 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 		--> npm i express-validator
 
 		Usame check del paquete de express validator para validar los campos enviados en el request.
+
+8 - Custom middleware.
+		No es mas que un funcion que quiero colocar dentro de un CHECK o validación de Express.
+		
