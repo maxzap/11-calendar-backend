@@ -103,5 +103,7 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 		Las variables de entornos sensibles podrian crearse en heroku como variables de entornos, para los casos en donde despleguemos en backends de terceros.
 
 11 - Registracion de usuarios (persistir en la BD).
-	Las collecciones se persisten en pĺurar gracias a Mongoose, existe una configuracion que crear las colecciones de los modelos en plurar de manera automatica. De todos se puede modificar esta configuracion de Mongoose.
+		Las collecciones se persisten en pĺurar gracias a Mongoose, existe una configuracion que crear las colecciones de los modelos en plurar de manera automatica. De todos se puede modificar esta configuracion de Mongoose.
 
+12 - Validaciones de usuarios.
+		Utilizamos mongoose para buscar un registro puntual en mongo basandome por uno de los atributos del modelo.
