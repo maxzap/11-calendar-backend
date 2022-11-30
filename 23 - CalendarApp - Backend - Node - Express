@@ -107,3 +107,11 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 12 - Validaciones de usuarios.
 		Utilizamos mongoose para buscar un registro puntual en mongo basandome por uno de los atributos del modelo.
+
+13 - Encriptar una contraseña.
+
+		Vamos a encriptar la contraseña antes de que persistirla.
+		El motodo de encriptación va a ser de un hash de una sola via.
+
+		Vamos a utilizar una libreria de terceros para encriptar.
+			--> npm i bcryptjs
