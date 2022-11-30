@@ -115,3 +115,6 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 		Vamos a utilizar una libreria de terceros para encriptar.
 			--> npm i bcryptjs
+
+14 - Login de usuario.
+		Comparamos la constreñas enviada en el login con la que se encuentra en la bd utilizando bcrypt.
