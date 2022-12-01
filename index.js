@@ -1,5 +1,6 @@
 const express = require('express');
 require('dotenv').config();
+const cors = require('cors');
 const { dbConnection } = require('./db/config');
 
 // Crar el servidor de express
@@ -7,6 +8,10 @@ const app = express();
 
 //database
 dbConnection();
+
+// CORS
+// TODO: Buscar videos especializados sobre CORS
+app.use(cors())
 
 // Directorio publico
 app.use( express.static('public') );

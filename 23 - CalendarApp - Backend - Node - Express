@@ -128,3 +128,11 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 16 - Revalidar JWT.
 		Es un standard que los token personalizados se definan con una 'x-' en el nombre.
 		Creamos un nuevo middleware para gestionar la validacion del token recibido en el request.
+
+17 - Configurar CORS.
+		Con CORS podemos configurar las restricciones hacia los consumidores que queramos.
+
+		--> https://www.npmjs.com/package/cors
+		--> enable-cors.org
+
+		
