@@ -117,4 +117,10 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 			--> npm i bcryptjs
 
 14 - Login de usuario.
-		Comparamos la constreñas enviada en el login con la que se encuentra en la bd utilizando bcrypt.
+		Comparamos la contraseñas enviada en el login con la que se encuentra en la bd utilizando bcrypt.
+
+15 - Generar un JWT.
+		--> https://jwt.io/
+
+		libreria para trabajar con JWT.
+		--> npm i jsonwebtoken

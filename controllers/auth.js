@@ -1,6 +1,7 @@
 const { response } = require('express');
 const bcrypt = require('bcryptjs');
-const Usuario = require('../models/Usuario')
+const Usuario = require('../models/Usuario');
+const { generarJWT } = require('../helpers/jwt');
 
 const createUser = async(req, res = response ) => {
 
@@ -22,13 +23,17 @@ const createUser = async(req, res = response ) => {
         const salt = bcrypt.genSaltSync();
         usuario.password = bcrypt.hashSync( password, salt );
 
-    
         await usuario.save();
+
+        // generar JWT
+        const token =  await generarJWT( usuario.uid, usuario.name );
+
     
         res.status(201).json({
             ok: true,
             uid: usuario.id,
-            name: usuario.name
+            name: usuario.name,
+            token
         });
         
     } catch (error) {
@@ -64,13 +69,16 @@ const loginUser = async(req, res = response) => {
                 msg: 'Contraseña incorrecta'
             });
         }
+        
+        // generar JWT
+        const token =  await generarJWT( usuario.uid, usuario.name );
 
-        // Generear JWT
 
         res.json({
             ok: true,
             uid: usuario.id,
             name: usuario.name,
+            token
         })
         
     } catch (error) {
