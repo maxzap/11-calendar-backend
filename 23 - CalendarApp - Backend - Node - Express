@@ -124,3 +124,7 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 		libreria para trabajar con JWT.
 		--> npm i jsonwebtoken
+
+16 - Revalidar JWT.
+		Es un standard que los token personalizados se definan con una 'x-' en el nombre.
+		Creamos un nuevo middleware para gestionar la validacion del token recibido en el request.
