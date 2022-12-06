@@ -134,5 +134,22 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 
 		--> https://www.npmjs.com/package/cors
 		--> enable-cors.org
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+CRUD completo de eventos de calendario
 
-		
+Modelos
+
+Validaciones automáticas
+
+Validaciones personalizadas
+
+Aquí trabajaremos creando todo lo necesario para que podamos insertar,
+actualiza y eliminar información relacionada a los eventos que nuestra aplicación del calendario necesitará.
+
+------------------------------------------------------------------------------------------------------------
+18 - Continuar el proyecto - Calendar Backend
+19 - Resolución de la tarea - CRUD
+		Correcciones: 
+			Especificar las rutas para saber que urls llamar.
+			Utilizar el router.use( _funcion_middleware_ ) para simplifcar el uso de middleware reiterados.
