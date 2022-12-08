@@ -157,3 +157,11 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 20 - Modelo de evento.
 		Configuracion minima necesaria para crear la conexion a la BD y tener una estructura de datos.
 		Provamos por primera vez la creación de un evento.
+
+21 - Validar campos necesarios.
+		Necesito validar que la información se encuentre y no desperdiciar recurso.
+		Usamos Check para la validación de los campos, que no es mas que una colección de middlewares.
+		
+
+		Instalamos moment para realizar la validación de las fechas.
+		--> npm i moment
