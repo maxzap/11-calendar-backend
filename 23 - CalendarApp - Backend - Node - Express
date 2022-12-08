@@ -165,3 +165,13 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 
 		Instalamos moment para realizar la validación de las fechas.
 		--> npm i moment
+
+
+22 - Grabar un evento en BD.
+		Utilizamos el modelo de Mongooze para persistir el evento.
+		
+		Antes de guardar el Evento seteamos el id del User (ya que esta marcado como required) y lo obtenmos del request, que tiene el token y a su vez el token tiene los datos del usuario.
+
+		Vamos a customizar la manera en que la serialización persiste los datos en BD.
+
+		REVISAR: fix al momento de la creación del usuario, no devuelve el UID;

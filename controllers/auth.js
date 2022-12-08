@@ -22,11 +22,10 @@ const createUser = async(req, res = response ) => {
         // Encriptar contraseña
         const salt = bcrypt.genSaltSync();
         usuario.password = bcrypt.hashSync( password, salt );
-
-        await usuario.save();
-
+        
+        const usuarioGuardado = await usuario.save();
         // generar JWT
-        const token =  await generarJWT( usuario.uid, usuario.name );
+        const token =  await generarJWT( usuario.id, usuario.name );
 
     
         res.status(201).json({
