@@ -10,6 +10,10 @@ const getEventos = async(req, res = response ) => {
 }
 
 const crearEvento = async(req, res = response ) => {
+
+    //En primera instancia necesito validar que el request tengo el evento.
+    console.log( req.body )
+
     return res.json({
         ok: true,
         msg: 'crearEvento'   

@@ -153,3 +153,7 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 		Correcciones: 
 			Especificar las rutas para saber que urls llamar.
 			Utilizar el router.use( _funcion_middleware_ ) para simplifcar el uso de middleware reiterados.
+
+20 - Modelo de evento.
+		Configuracion minima necesaria para crear la conexion a la BD y tener una estructura de datos.
+		Provamos por primera vez la creación de un evento.
