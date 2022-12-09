@@ -24,8 +24,9 @@ const createUser = async(req, res = response ) => {
         usuario.password = bcrypt.hashSync( password, salt );
         
         const usuarioGuardado = await usuario.save();
+        console.log(usuarioGuardado);
         // generar JWT
-        const token =  await generarJWT( usuario.id, usuario.name );
+        const token =  await generarJWT( usuarioGuardado.id, usuario.name );
 
     
         res.status(201).json({
@@ -52,6 +53,7 @@ const loginUser = async(req, res = response) => {
     try {
         const usuario = await Usuario.findOne({ email });
 
+
         if ( !usuario ) {
             return res.status(400).json({
                 ok: false,
@@ -70,7 +72,7 @@ const loginUser = async(req, res = response) => {
         }
         
         // generar JWT
-        const token =  await generarJWT( usuario.uid, usuario.name );
+        const token =  await generarJWT( usuario.id, usuario.name );
 
 
         res.json({
