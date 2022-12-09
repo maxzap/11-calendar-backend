@@ -204,5 +204,14 @@ Es una sección corta pero enfocada en que puedan desplegar todo su trabajo en u
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
 
-1 - Despliege en Heroku.
+1 - SingIn en Heroku.
+		Hosting para desplegar app productivas, tiene un free tier de 5 applicaciones.
+		--> https://www.heroku.com/
+
+2 - Desplegar la applicacion en heroku.
+		Install the Heroku CLI
+		Download and install the Heroku CLI.
+			--> https://devcenter.heroku.com/articles/heroku-cli
 		
+		Comando para instalar heroku cli en ubuntu.
+		--> curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
