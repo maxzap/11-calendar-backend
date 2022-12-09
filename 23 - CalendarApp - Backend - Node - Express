@@ -136,6 +136,9 @@ Si quieren saber más sobre Node, recuerden que tengo un curso especializado en 
 		--> enable-cors.org
 ------------------------------------------------------------------------------------------------------------
 ------------------------------------------------------------------------------------------------------------
+
+SECCIÓN 24
+
 CRUD completo de eventos de calendario
 
 Modelos
@@ -182,3 +185,24 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 24 - Actualizar un evento.
 
 25 - Eliminar eventos.
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+SECCIÓN 25
+Despliegues de Node hacia Heroku
+
+Git
+
+Generar nuestra aplicación de React para producción
+
+Revisar LOGS de Heroku
+
+Es una sección corta pero enfocada en que puedan desplegar todo su trabajo en un hosting que les permita compartir todo su trabajo a cualquier persona y usar su aplicación en cualquier lugar del mundo.
+
+
+------------------------------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------------------------------
+
+1 - Despliege en Heroku.
+		
