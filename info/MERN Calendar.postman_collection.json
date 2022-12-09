@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "5ecbde2b-2a2b-4e87-8a40-dfb4f06825a0",
+		"name": "MERN Calendar",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Auth - Crear usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Maximiliano\",\n    \"email\": \"Maximiliano@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/api/auth/new",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"new"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Auth - Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWF4aW1pbGlhbm8iLCJpYXQiOjE2Njk4NjIwODQsImV4cCI6MTY2OTg2OTI4NH0.xtnlHk0dutcnKk281N1OE2j5PYZwJ71zbR17W44b2Eg",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"Pablo@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/api/auth",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Auth - Revalidar JWT",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MzkzMWU1YWQxZjgzOTY1ZTVlNDI1NmMiLCJuYW1lIjoiUGFibG8iLCJpYXQiOjE2NzA1ODYxMTIsImV4cCI6MTY3MDU5MzMxMn0.6PngNZVWQp6hIZm6dDt3Ih2xs1FWv2GMQMatiYQOx0s",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"maximiliano@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/api/auth/renew",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"auth",
+						"renew"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Events - actualizarEvento",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MzkzMWU1YWQxZjgzOTY1ZTVlNDI1NmMiLCJuYW1lIjoiUGFibG8iLCJpYXQiOjE2NzA1ODU5NDYsImV4cCI6MTY3MDU5MzE0Nn0.IVLcBuL6Ws_CV1lJmOifM3hYZE1I6UKWoLOEBn8I7II",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Trabajo pendiente actualizando\",\n    \"start\": 2,\n    \"end\": 100000,\n    \"notes\": \"Hola Mundo.....\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/api/events/63931e79d1f83965e5e4256e",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"events",
+						"63931e79d1f83965e5e4256e"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Events - eliminarEvento",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MzkzMWU1YWQxZjgzOTY1ZTVlNDI1NmMiLCJuYW1lIjoiUGFibG8iLCJpYXQiOjE2NzA1ODU5NDYsImV4cCI6MTY3MDU5MzE0Nn0.IVLcBuL6Ws_CV1lJmOifM3hYZE1I6UKWoLOEBn8I7II",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/63931e79d1f83965e5e4256e",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"63931e79d1f83965e5e4256e"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Events - getEventos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiTWF4aW1pbGlhbm8iLCJpYXQiOjE2NzA1ODA3MzcsImV4cCI6MTY3MDU4NzkzN30.8fgYtOhpmXgegVo6NPo0xWMltQRvwI3sUkQeFHIyNwE",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"maximiliano@gmail.com\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/api/events",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"events"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		},
+		{
+			"name": "Events - crearEvento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2MzkzMWU1YWQxZjgzOTY1ZTVlNDI1NmMiLCJuYW1lIjoiUGFibG8iLCJpYXQiOjE2NzA1ODU5NDYsImV4cCI6MTY3MDU5MzE0Nn0.IVLcBuL6Ws_CV1lJmOifM3hYZE1I6UKWoLOEBn8I7II",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Cambio de aceite Suran\",\n    \"notes\": \"Cambiar filtros\",\n    \"start\": 1,\n    \"end\": 100000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://mern-calendar-mmz.herokuapp.com/api/events",
+					"protocol": "https",
+					"host": [
+						"mern-calendar-mmz",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"api",
+						"events"
+					]
+				},
+				"description": "Auth - Crear usuario"
+			},
+			"response": []
+		}
+	]
+}
