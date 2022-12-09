@@ -46,7 +46,7 @@ const actualizarEvento = async(req, res = response ) => {
         const evento = await Evento.findById( eventoId );
 
         if( !evento ) {
-            res.status(404).json({
+            return res.status(404).json({
                 ok: false,
                 msg: 'Id de evento inexistente'
             })
@@ -82,10 +82,40 @@ const actualizarEvento = async(req, res = response ) => {
 }
 
 const eliminarEvento = async(req, res = response ) => {
-    return res.json({
-        ok: true,
-        msg: 'eliminarEvento'   
-    })
+    const eventoId = req.params.id;
+
+    try {
+        const evento = await Evento.findById( eventoId );
+
+        if( !evento ) {
+            return res.status(404).json({
+                ok: false,
+                msg: 'Id de evento inexistente'
+            })
+        };
+
+        if ( evento.user.toString() !== req.uid ) {
+            return res.status(401).json({
+                ok: false,
+                msg: 'Privilegios insuficientes para eliminar el evento'
+            })
+        }
+
+
+        await Evento.findByIdAndDelete( eventoId );
+
+        res.json({
+            ok: true
+        });
+
+        
+    } catch (error) {
+        console.log(error);
+        res.status(500).json({
+            ok: false,
+            msg: 'No se pudo eliminar el evento.'
+        })
+    };
 }
 
 

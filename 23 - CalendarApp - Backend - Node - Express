@@ -180,4 +180,5 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 		".populate" permite filtrar la respuesta.
 
 24 - Actualizar un evento.
-		
+
+25 - Eliminar eventos.
