@@ -178,3 +178,6 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 
 23 - Obtener el listado de eventos.
 		".populate" permite filtrar la respuesta.
+
+24 - Actualizar un evento.
+		
