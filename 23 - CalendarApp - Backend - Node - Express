@@ -175,3 +175,6 @@ actualiza y eliminar información relacionada a los eventos que nuestra aplicaci
 		Vamos a customizar la manera en que la serialización persiste los datos en BD.
 
 		REVISAR: fix al momento de la creación del usuario, no devuelve el UID;
+
+23 - Obtener el listado de eventos.
+		".populate" permite filtrar la respuesta.
