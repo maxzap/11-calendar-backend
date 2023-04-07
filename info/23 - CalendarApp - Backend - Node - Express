@@ -215,3 +215,16 @@ Es una sección corta pero enfocada en que puedan desplegar todo su trabajo en u
 		
 		Comando para instalar heroku cli en ubuntu.
 		--> curl https://cli-assets.heroku.com/install-ubuntu.sh | sh
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SECCIÓN 27
+
+Eventos del calendario + backend
+
+Toda esta sección está enfocada en hacer persistentes nuestros cambios y eventos del calendario utilizando nuestro backend, disparando acciones asíncronas que terminan ejecutando las acciones síncronas que habíamos definido anteriormente.
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+1 - Continuación del proyecto - Caledar CRUD de Eventos.
+		Nodemon solo lo vas a usar en modo de desarrollo, en produccion solo vamos a usar los comandos de node. El nodemon nos ayuda con la deteccion de cambios de nuestro proyecto de node y recarga y vuelve a lanzar el proyecto cuando hay cambios. Este comportamiento no lo queremos en produccion.
