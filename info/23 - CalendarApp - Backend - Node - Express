@@ -228,3 +228,41 @@ Toda esta sección está enfocada en hacer persistentes nuestros cambios y event
 
 1 - Continuación del proyecto - Caledar CRUD de Eventos.
 		Nodemon solo lo vas a usar en modo de desarrollo, en produccion solo vamos a usar los comandos de node. El nodemon nos ayuda con la deteccion de cambios de nuestro proyecto de node y recarga y vuelve a lanzar el proyecto cuando hay cambios. Este comportamiento no lo queremos en produccion.
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SECCIÓN 28
+
+Despliegues a producción
+
+Aquí tomaremos nuestra aplicación de React para generar el build de producción y desplegarlo en nuestro backend en Heroku (*).
+
+	*.	Desde agosto del 2022 Heroku ya no tiene una capa gratuita para realizar los despliegues a producción.
+		Por esto vamos a utilizara Fly.io en lugar de Heroku para desplegar nuestro backend.
+		Una punto no menor, es que el despliegue del frontend se puede realizar de manera independiente en Netlify o Github pages.
+		
+----------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------------
+
+1 - Despliegues en heroku.
+	--> heroku.com/
+
+	Vamos a realizar el despliegue en Fly.io.
+	--> fly.io
+
+	Instalamos el cli de flyio, flyctl.
+	--> curl -L https://fly.io/install.sh | sh
+
+	Los archivos de instalación al bash.
+	-->   	export FLYCTL_INSTALL="/home/max/.fly"
+			export PATH="$FLYCTL_INSTALL/bin:$PATH"
+	Luego seguimos los pasos para deployar el proyecto en flyio.
+
+2 - Corregir la ruta en Express y HashRouter
+	Tenemos un error al intentar acceder a carpetas que no existen en nuestro hosting.
+	Hay manera de corregirlo de manera que React Outer Dome resuelva las peticiones que apuntan a rutas inexistentes.
+		. Cuando no tenemos acceso al despliegue podemos resolverlo usando la tecnica del HashRouter.
+			En el front podemos reemplazar el BrowserRouter por HashRouter.
+		. Cuando tenemos acceso podemos atrapar las rutas no identificadas y devolver el index.html
